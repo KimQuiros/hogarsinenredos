@@ -1,0 +1,55 @@
+/*----------Indice-------------
+		#partials
+		#modules
+
+	Importar-las-hojas-scss
+*/
+
+/*
+ * MDB
+ */
+@import "bootstrap";
+@import "font-awesome/font-awesome";
+
+/*
+ * Partials
+ */
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/globals";
+
+/*
+ * Layout
+ */
+@import "partials/layout/header";
+// @import "partials/layout/quienes-somos";
+// @import "partials/layout/cover";
+// @import "partials/layout/home";
+// @import "partials/layout/cifras";
+// @import "partials/layout/news";
+// @import "partials/layout/afiliados";
+// @import "partials/layout/oferentes-cv";
+// @import "partials/layout/afiliacion";
+// @import "partials/layout/legislacion";
+// @import "partials/layout/contacto";
+// @import "partials/layout/eventos";
+// @import "partials/layout/footer";
+
+
+/*
+ * Skin
+ */
+ // @import "partials/skin/header";
+ // @import "partials/skin/nav";
+ // @import "partials/skin/quienes-somos";
+ // @import "partials/skin/cover";
+ // @import "partials/skin/home";
+ // @import "partials/skin/cifras";
+ // @import "partials/skin/news";
+ // @import "partials/skin/afiliados";
+ // @import "partials/skin/oferentes";
+ // @import "partials/skin/eventos";
+ // @import "partials/skin/afiliacion";
+ // @import "partials/skin/contacto";
+ // @import "partials/skin/footer";

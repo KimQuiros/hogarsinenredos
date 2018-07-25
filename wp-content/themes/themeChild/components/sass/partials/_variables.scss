@@ -1,0 +1,52 @@
+/*----------Indice----------
+		#colors
+		#tipography
+		#max-width
+		#padding-left-and-right-of-the-header
+*/
+@font-face {
+    font-family: 'arialbold';
+    src: url('fonts/arial_bold-webfont.woff2') format('woff2'),
+         url('fonts/arial_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'arialregular';
+    src: url('fonts/arial-webfont.woff2') format('woff2'),
+         url('fonts/arial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'the_bold_fontbold';
+    src: url('fonts/theboldfont-webfont.woff2') format('woff2'),
+         url('fonts/theboldfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$title: 'the_bold_fontbold';
+$body: 'arialregular';
+
+//	#colors
+$white: #fff;
+$black: #171327;
+$gray: #f4f4f4;
+$green: #1f6143;
+$shadow: #383838;
+$border: #b8babc;
+$h3-color: #58595b;
+
+$icon-color:$green; //#4A94DD;
+
+$color_text: #797a7d; 
+
+$base: 420px;
+$small: 600px;
+$medium: 900px;
+$large: 1000px;
+$big:1200px;

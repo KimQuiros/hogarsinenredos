@@ -1,0 +1,128 @@
+/*----------Indice-------------
+		#font-size
+*/
+// #font-size
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+@mixin button($border, $background-color, $color) {
+  @include font-size(14);
+  background-color: $background-color;
+  border: 0;
+  border-radius: 2px;
+  color: $color;
+  font-family: $title;
+  padding: 8px 17px;
+}
+
+@mixin post{
+  .vc_gitem-animated-block .vc_gitem-zone-a {
+    height: 210px;
+  }
+  .vc_custom_1419240516480,.vc_custom_1419334531994{
+    background-color: transparent!important;
+    border: 1px solid $border;
+  }
+  .vc_custom_1419334531994{
+    background-color: transparent!important;
+  }
+  .vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat {
+    @include readMore;
+  }
+  .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat:focus, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat:hover, .vc_btn3.vc_btn3-color-juicy-pink:focus, .vc_btn3.vc_btn3-color-juicy-pink:hover {
+    color: $green;
+    background-color: transparent;  
+  }
+  .vc_grid-item-zone-c-right .vc_gitem-zone-c {
+    float: none;
+    width: 100%;
+  }
+  .vc_grid-item-zone-c-left .vc_gitem-zone-c, .vc_grid-item-zone-c-right .vc_gitem-animated-block {
+    float: left;
+    width: 100%;
+  }
+}
+
+@mixin border{
+  padding: 25px 15px;
+  border: 1px solid $border;
+  border-top: 4px solid $green;
+}
+
+@mixin transition{
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@mixin h2{
+  height: 330px;
+  @media (max-width: 1024px) {
+    height: 255px;
+  }
+  @media (max-width: 991px) {
+    height: 200px;
+  }
+  @media (max-width: 767px) {
+    height: 83px;
+  }
+  h2{
+    padding-top: 160px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    z-index: 1;
+    color: $white;
+    @media (max-width: 991px) {
+      padding-top: 90px;
+    }
+    @media (max-width: 767px) {
+      color: $green;
+      padding-top:104px;
+    }
+    &:after{
+      content: "";
+      background-color: rgba(0,0,0,0.5);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 73px;
+      left: 0;
+      z-index: -1;
+      @media (max-width: 767px) {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@mixin readMore{
+  color: $color_text;
+  background-color: transparent;
+  position:relative;
+  border-color: transparent;
+  padding: 0;
+  &:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    padding-right: 5px;
+  }
+}
+
+@mixin breakpoint {
+    .navbar-header { float: none }
+    .navbar-left, .navbar-right { float: none !important }
+    .navbar-toggle { display: block }
+    .navbar-collapse { border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); }
+    .navbar-fixed-top { top: 0; border-width: 0 0 1px; }
+    .navbar-collapse.collapse { display: none!important }
+    .navbar-nav { float: none!important; margin-top: 7.5px; }
+    .navbar-nav>li { float: none }
+    .navbar-nav>li>a { padding-top: 10px; padding-bottom: 10px; }
+    .collapse.in { display: block !important }
+}

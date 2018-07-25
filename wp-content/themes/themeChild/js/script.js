@@ -1,0 +1,1 @@
+var mn=$(".navbar-collapse");mns="main-nav-scrolled",hdr=$(".top-menu").height(),jQuery(window).scroll(function(){$(this).scrollTop()>hdr?mn.addClass(mns):mn.removeClass(mns)});
