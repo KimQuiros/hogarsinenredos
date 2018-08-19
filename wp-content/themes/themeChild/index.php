@@ -13,19 +13,17 @@
  * @subpackage CIAB
  * @since 1.0
  * @version 1.0
- *
+ * Template Name: Home
  * 
  *
  */
  echo get_header(); ?>
 <section class="content-text">
-	<div class="container">
 		<?php   
-			$post = get_page($id); 
+		$post = get_page($id); 
 			// echo $post->post_content;  
 			// echo do_shortcode( ' [ ciab_shortcode ] ' );
-			echo apply_filters( 'the_content', $post->post_content );
+		echo apply_filters( 'the_content', $post->post_content );
 		?>
-	</div>
-</section>
+</section> 
 <?= get_footer(); ?>

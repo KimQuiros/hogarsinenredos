@@ -23,20 +23,24 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 // Conectar JS script
 function custom_scripts() {
- 	wp_register_script( 'jquery-script', get_stylesheet_directory_uri() . '/js/jquery.min.js', array(), false );
- 	wp_enqueue_script( 'jquery-script' );
- 	wp_register_script( 'custom-script', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array(), false );
+  wp_register_script( 'custom-script', get_stylesheet_directory_uri() . '/js/jquery.matchHeight.js', array(), false );
+  wp_enqueue_script( 'custom-script' );
+  wp_register_script( 'custom-script', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array(), false );
  	wp_enqueue_script( 'custom-script' );
  	wp_register_script( 'custom-script', get_stylesheet_directory_uri() . '/js/plugins.min.js', array(), false );
  	wp_enqueue_script( 'custom-script' );
  	wp_register_script( 'script', get_stylesheet_directory_uri() . '/js/script.min.js', array(), false );
  	wp_enqueue_script( 'script' );
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'custom_scripts', 99 );
 
+
 register_nav_menus( array(
-	'top' => __( 'Top Menu', 'hogarsin' ),
-    'main-nav' => __( 'Menu Principal', 'hogarsin' )
+  'main-nav' => 'Menu',
+  'media' => 'Social Media'
 ) );
 
 
@@ -81,4 +85,14 @@ $classes[] = $post->post_type . '-' . $post->post_name;
 return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+function get_excerpt($count){  
+    $permalink = get_permalink($post->ID);
+    $excerpt = get_the_content(); 
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, $count);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    //$excerpt = $excerpt.'... <a href="'.$permalink.'">leer mas</a>';
+    return $excerpt;
+}
   

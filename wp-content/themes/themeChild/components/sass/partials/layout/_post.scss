@@ -1,0 +1,107 @@
+.single-post{
+	.home{
+			display: none;
+		}
+	.logo-page{
+		display: block!important;
+	}
+	.text{
+		margin-top: 65px;
+		ul{
+			padding-left: 20px;
+		}
+		ul li{
+			list-style: square;
+			font-size: 15px;
+		}
+		p{
+			font-size: 15px;
+		}
+	}
+	.div-flex{
+		display: none;
+	}
+	.detalle{
+		padding-bottom: 40px;
+		overflow: hidden;
+		.dix-flex{
+			height: 400px;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			@media (max-width: 767px) {
+				height: 160px;
+			}
+		}
+		h2{
+			margin-botttom:25px;
+		}
+		.post-categories li{
+			text-align: right;
+			a{
+				color: $green;
+				font-size: 15px;
+			}
+		}
+		time{
+			font-family: $body;
+			color: $color-text;
+		}
+		p{
+			margin-top: 30px;
+			overflow: hidden;
+			line-height: 21px;
+		}
+	}
+	.side-bar{
+		h4{
+			margin: 0;
+		}
+		p{
+			margin:0!important;
+		}
+		li{
+			padding-bottom: 20px;
+			padding-top: 20px;
+			border-bottom: 1px solid #f8f8f8;
+		}
+	}
+	textarea{
+		width: 100%;
+	}
+	.submit{
+		border: 3px solid $green;
+		background: transparent;
+		padding: 15px 20px;
+		color: $green;
+		text-transform: uppercase;
+	}
+	.comment-author {
+			.avatar{
+				display: none;
+			}
+			cite{
+				font-weight: bold;
+				font-size: 15px;
+				font-style: normal;
+				text-transform: uppercase;
+				color: $green;
+			}
+	}
+	.comment-meta{
+		font-size: 12px;
+		color: $green!important;
+	}
+	.comment-meta a{
+		color: $black!important;
+	}
+	.comment-body p{
+		padding: 30px;
+		border-left: 3px solid #f4f4f4;
+	}
+	.comment-respond{
+		margin-top: 60px;
+	}
+	.comments-section{
+		padding-bottom: 80px;
+	}
+}

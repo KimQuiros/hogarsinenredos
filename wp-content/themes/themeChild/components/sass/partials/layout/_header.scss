@@ -1,100 +1,24 @@
-.site-header{
-  position: relative;
-  z-index: 2;
-}
-@media (max-width: 991px) {
-    #top-header {
-        @include breakpoint();
-        border-radius: 0;
-    }   
-}
-#top-header{
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  .navbar {
-    border-radius: 0;
+header{
+  height: 600px;
+ @media (min-width: 401px) and (max-width:1000px) {
+  	height: 380px;
   }
-  .navbar-header{
-    .navbar-brand{
-      width: 82px;
-      padding-top: 6px;
-    }
-    .navbar-toggle {
-      border: 1px solid $green;
-     .icon-bar {
-        display: block;
-        width: 22px;
-        height: 2px;
-        border-radius: 1px;
-        background-color: $green;
-      }
-    }
-  }
-  .top-menu{
-
-    .menu{
-      text-align: right;
-    }
-    .menu-item-type-custom{
-      width: 30px;
-      display: inline-block;
-      margin-top: 6px;
-      text-align: center;
-      height: 30px;
-      padding-top: 5px;
-      margin-bottom: 6px;
-    }
-    p{
-      margin: 15px 0;
-    }
-  }
-  .tb-mobile-menu {
-    padding: 5px 0;
-    padding-bottom: 5px!important;
-    .menu{
-      text-align: right;
-      margin-top: 15px;
-      @media (max-width: 991px) {
-        margin-top: 0;
-        border-top: 1px solid #ccc;
-      }
-    }
-    .navbar-brand{
-      height: auto;
-      padding: 0;
-      img{
-        width: 67px;//75px;
-      }
-    }
-    .navbar-nav{
-      padding-right: 0;
-    }
-    .menu-item{
-      // width: 110px;
-      margin-left: 33px;
-      display: inline-block;
-      text-align: center;
-      @media (max-width: 1024px) {
-        margin-left: 27px;
-      }
-      @media (max-width: 991px) {
-        display: block;
-        text-align: left;
-        padding: 12px 0;
-      }
-    }
-  }
-  .main-nav-scrolled {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    @media (max-width: 991px) {
-      top: 53px;
-      left: 0;
-    }
+  @media (max-width: 400px) {
+	  height: 265px;
+	}
+  .div-flex{
+  	position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	  @media (min-width: 401px) and (max-width:1000px) {
+	  	background-size: 100%;
+	  	background-repeat: no-repeat;
+	  }
+	  @media (max-width: 400px) {
+	  	background-size: 155%;
+			background-repeat: no-repeat;
+			background-position: top right;
+	  }
   }
 }

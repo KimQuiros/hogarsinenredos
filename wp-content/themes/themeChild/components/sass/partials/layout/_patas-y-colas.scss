@@ -1,0 +1,41 @@
+.page-patas-y-colas{
+	.div-flex{
+		background-position: bottom center;
+	}
+	.wpb_content_element{
+			margin-bottom: 5px;
+	}
+	h3{
+		color: $orange;
+		position: relative;
+		margin-bottom:0;
+		&:before{
+			content: "";
+			border-top:3px solid $orange;
+			width: 63px;
+	    position: absolute;
+	    top: -10px;
+	    left: 0;
+	    right: 0;
+	    margin-right: auto;
+	    margin-left: auto;
+	    z-index: 2;
+		}
+	}
+	.post-content p{
+		font-size: 13px;
+	}
+	h2{
+		margin-top: 0;
+		margin-bottom: 30px!important;
+		color: $black!important;
+	}
+	.section-services{
+		padding-top: 0;
+		padding-bottom: 100px;
+		.imgs-content{
+			padding-top: 50px;
+		  padding-bottom: 50px;
+		}
+	}
+}

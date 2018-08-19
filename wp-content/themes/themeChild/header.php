@@ -34,37 +34,28 @@
 <body <?php body_class(); ?> >
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
+			<?php 
+			if ( has_post_thumbnail() ) {
+			?>
+			<div class="div-flex" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+			<?php 
+			} 
+			?>
 			<div class="navigation-top">
 				<div class="wrap">
 					<?php require (get_stylesheet_directory() . '/template-parts/navigation/navigation-top.php'); ?>
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
-		<?php endif; ?>
-
 		<?php //require (get_stylesheet_directory() . '/template-parts/header/header-image.php'); ?>
-
-
 	</header><!-- #masthead -->
 
 	<?php
-
+// }
 	/*
 	 * If a regular post or page, and not the front page, show the featured image.
 	 * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
 	 */
-	if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-		?><div class="single-featured-image-header" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
-			<?php 
-			if (!is_page('inicio')) { 
-				 the_title('<h2>', '</h2>');
-			} 
-		// echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
-			?>
-		</div><!-- .single-featured-image-header -->
-		<?php 
-		} 
-	?>
-
+	 // check if the post has a Post Thumbnail assigned to it.
+		?>
 	<div class="site-content-contain">
 		<div id="content" class="site-content">

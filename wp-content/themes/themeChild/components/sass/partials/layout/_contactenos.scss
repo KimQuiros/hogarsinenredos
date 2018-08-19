@@ -1,0 +1,64 @@
+.page-contactenos{
+	.home{
+		display: none;
+	}
+	h2{
+		position: relative;
+		color: $purple;
+		&:before{
+			content: "";
+			border-top:3px solid $purple;
+			width: 63px;
+	    position: absolute;
+	    top: -10px;
+	    left: 0;
+	    right: 0;
+	    margin-right: auto;
+	    margin-left: auto;
+	    z-index: 2;
+		}
+	}
+	.section-form{
+		padding-bottom: 100px;
+	}
+	.logo-page{
+		display:block!important;
+	}
+	.wpb_content_element{
+		margin-bottom: 0!important;
+	}
+	.nf-form-cont{
+		width: 70%;
+		text-align: center;
+		margin: 0 auto;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+		.nf-form-title{
+			display: none;
+		}
+		.nf-form-content {
+			margin-top:50px;
+		}
+	}
+	.ninja-forms-field{
+		padding: 10px; 
+		background-color: #f4f4f4;
+		border: 0; 
+	}
+	.nf-error-msg{
+		text-align: left;
+	}
+	.nf-after-form-content .nf-error-msg{
+		text-align: center;
+	}
+	#nf-field-4{
+		width: 80%;
+		padding: 20px;
+		text-transform: uppercase;
+		border: 3px solid $purple;
+		background: transparent;
+		font-family: $body;
+		color: $purple;
+	}
+}

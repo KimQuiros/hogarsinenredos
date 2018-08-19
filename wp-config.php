@@ -16,6 +16,8 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/hogarsinenredos/wp-content/plugins/wp-super-cache/' );
 define('DB_NAME', 'hogarsinenredos');
 
 /** Tu nombre de usuario de MySQL */
@@ -79,4 +81,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+define('FS_METHOD', 'direct');
 

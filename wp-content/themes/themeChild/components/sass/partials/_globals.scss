@@ -70,7 +70,6 @@ h3{
   font-size: 25px;
   margin: 5px 0 15px;
   font-family: $title;
-  color: $h3-color;
 }
 
 h4{
@@ -85,16 +84,25 @@ h5{
   font-family: $title;
   color: $green;
   font-size: 18px;
-  margin: 0 0 1.67em;
+  margin: 0 0 5px;
 }
 
-p{
-    font-size: 14px;
+p, .nf-form-fields-required, li{
+    font-size: 13px;
     font-family: $body;
     color: $color_text!important;
+    letter-spacing: 1px;
+}
+.ninja-forms-req-symbol{
+  color: red;
+}
+
+span{
+  font-family: $body;
 }
 
 a{
+  font-family: $body;
   &:hover{
     text-decoration: none;
   }
@@ -102,6 +110,16 @@ a{
 
 ul li{
   list-style: none;
+}
+.post-content{
+  p{
+    font-size: 15px;
+  }
+  ul li{
+   list-style: square!important;
+   font-size: 15px;
+  }
+  
 }
 
 .vc_row{
@@ -144,5 +162,163 @@ ul li{
     bottom: 0;
     right: 0;
     left: 0;
+  }
+}
+
+.img-width{
+  padding: 0!important;
+}
+
+.vc_section{
+  margin: 0!important;
+}
+
+.container{
+  margin: 0 auto !important;
+}
+
+.page-sobre-nosotros{
+  header{
+    height: 550px!important;
+    background-position: left;
+    background-color: $green;
+    position:relative;
+    @media (max-width: 767px) {
+      height: 278px!important;
+    }
+    &:before{
+      content:"";
+      position: absolute;
+      background-image: url(img/border.png);
+      width: 100%;
+      height: 144px;
+      bottom: 0;
+      z-index: 1;
+      @media (max-width: 767px) {
+        bottom: -120px;
+        width: 100%;
+        height: 170px;
+        z-index: 1;
+        left: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .menu-item{
+    a{
+      // color: $black!important;
+    }
+  }
+}
+.logo-page{
+  display: none!important;
+}
+.page-patas-y-colas{
+  header{
+    background-size: 100%;
+    background-position: center;
+    height: 550px!important;
+    background-position: left;
+    background-color: $orange;
+    position:relative;
+    @media (max-width: 767px) {
+      height: 278px!important;
+    }
+    &:before{
+      content:"";
+      position: absolute;
+      background-image: url(img/border.png);
+      width: 100%;
+      height: 144px;
+      bottom: 0;
+      z-index: 1;
+      @media (max-width: 767px) {
+        bottom: -120px;
+        width: 100%;
+        height: 170px;
+        z-index: 1;
+        left: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .site-content-contain{
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+}
+.navigation-top, .wrap, .navbar, nav div, .navbar-header{
+  // height:100%;
+}
+.z-index{
+  z-index: 5!important;
+}
+.page-contactenos, .page-viviendo-con-alergias, .page-manos-a-la-obra, .page-patas-y-colas-categoria, .page-paternidad-y-maternidad, .single-post{
+  header .navbar-toggle {
+    border: 1px solid $purple;
+    .icon-bar {
+      background: $purple;
+    }
+  }
+  header{
+    height: 150px!important;
+  }
+  .menu-item{
+    a{
+      color: $black!important;
+      @media (max-width: 991px) {
+        color: $white!important; 
+      }
+    }
+  }
+}
+
+.post-section .vc-gitem-zone-height-mode-auto-1-1{
+  display: none;
+}
+.post-section .vc_gitem-row-position-top .vc_gitem-col {
+    padding: 0!important;
+}
+.post-section .vc_btn3.vc_btn3-size-md.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+    padding-left: 30px;
+}
+
+.post-section{
+  .pad-10{
+    padding: 10px!important;
+  }
+  .pad-10-left{
+    padding-left: 10px;
+  }
+  .pad-10-right{
+    padding-right: 10px;
+  }
+  .vc_gitem-post-data-source-post_excerpt{
+    padding: 10px;
+  }
+}
+
+.vc_grid-btn-load_more.vc_btn3-inline{
+  width: 50%;
+  .vc_general, .vc_btn3-style-flat{
+    width: 50%;
+    border-radius: 0;
+    border: 3px solid $green!important;
+    background: transparent!important;
+    color: $green!important;
+    &:hover{
+      border: 3px solid $green!important;
+      background: $green!important;
+      color: $white!important;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  header{
+    @include breakpoint();
   }
 }

@@ -43,8 +43,9 @@ module.exports = function(grunt) {
             dist: {
                 files: { 
                     'wp-content/themes/themeChild/js/script.min.js': ['wp-content/themes/themeChild/components/js/script.js'],
-                    '/localhost/htdocs/www/tours/wp-content/themes/themeChild/js/plugins.min.js': [
-                        'components/plugins/js/jquery.easing.min.js'
+                    'wp-content/themes/themeChild/js/plugins.min.js': [
+                        'wp-content/themes/themeChild/components/plugins/js/jquery.matchHeight.js',
+                        'wp-content/themes/themeChild/components/plugins/js/bootstrap.min.js'
                     ]
                 }
             }

@@ -4,42 +4,18 @@
 		#max-width
 		#padding-left-and-right-of-the-header
 */
-@font-face {
-    font-family: 'arialbold';
-    src: url('fonts/arial_bold-webfont.woff2') format('woff2'),
-         url('fonts/arial_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
 
-}
-@font-face {
-    font-family: 'arialregular';
-    src: url('fonts/arial-webfont.woff2') format('woff2'),
-         url('fonts/arial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'the_bold_fontbold';
-    src: url('fonts/theboldfont-webfont.woff2') format('woff2'),
-         url('fonts/theboldfont-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-$title: 'the_bold_fontbold';
-$body: 'arialregular';
+$title: 'Raleway', sans-serif;
+$body: 'Montserrat', sans-serif;
 
 //	#colors
 $white: #fff;
-$black: #171327;
-$gray: #f4f4f4;
-$green: #1f6143;
-$shadow: #383838;
-$border: #b8babc;
-$h3-color: #58595b;
+$black: #1c1c1c;
+$green: #24b197;
+$orange: #ea5a1a;
+$purple: #695376;
+$gray: #f9f9f9;
 
 $icon-color:$green; //#4A94DD;
 

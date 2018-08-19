@@ -1,0 +1,15 @@
+footer{
+	padding: 20px 0;
+	background-color: $purple;
+	p, a{
+		color: $white!important;
+		@media (max-width: 767px) {
+			text-align: center!important;
+		}
+	}
+	.col-md-6{
+		@media (max-width: 767px) {
+			text-align: center!important;
+		}
+	}
+}

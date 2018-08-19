@@ -19,13 +19,13 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container wrap">
 				<div class="col-md-12">
-					<?php
-					require (get_stylesheet_directory() . '/template-parts/footer/footer-widgets.php');
-					?>
 					<div class="col-md-6">
-						<div class="content-social-media">
-							<?php wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
-						</div>
+							<p class="copyright text-left">
+								©hogasinenredos 2018
+							</p>
+					</div>
+					<div class="col-md-6 text-right">
+							<a href="http://kimquiros.com/" target="_black">KimQuiros</a>
 					</div>
 				</div>
 			</div><!-- .wrap -->
