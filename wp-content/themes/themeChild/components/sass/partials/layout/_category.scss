@@ -5,6 +5,40 @@
 	.logo-page{
 		display: block!important;
 	}
+	.searchform{
+		text-align: center;
+		.screen-reader-text{
+			display: none;	
+		}
+		#s{
+			width: 65%;
+			height: 38px;
+			padding-left: 13px;
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+		}
+		#searchsubmit{
+			@include transition;
+			padding: 7px;
+			border-radius: 0;
+			border: 3px solid #24b197 !important;
+			background: transparent !important;
+			color: #24b197 !important;
+			display:none;
+			&:hover, &:active, &:focus{
+				border: 3px solid #24b197 !important;
+				background: #24b197 !important;
+				color: #fff !important;
+			}
+		}
+		.fa-search{
+			&:before{
+				content:"\f002";
+				font-family: "FontAwesome";
+			}
+		}
+	}
 }
 .post-section{
 		overflow: hidden;

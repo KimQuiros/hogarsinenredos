@@ -9,3 +9,6 @@ $(document).ready(function(){
 		$('header').toggleClass('z-index');
 	});
 });
+$(document).ready(function(){
+	document.getElementById("s").placeholder = "Ingresa el nombre del post que deseas buscar..."; 
+});

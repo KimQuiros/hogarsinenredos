@@ -35,6 +35,15 @@
 		h2{
 			margin-botttom:25px;
 		}
+		table{
+			border: 1px solid #f2f2f2;
+			width: 100%;
+		}
+		td, th {
+	    padding: 15px;
+	    border-bottom: 1px solid #f2f2f2;
+	    border-right: 1px solid #f2f2f2;
+		}
 		.post-categories li{
 			text-align: right;
 			a{

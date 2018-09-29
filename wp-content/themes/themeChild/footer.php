@@ -21,7 +21,7 @@
 				<div class="col-md-12">
 					<div class="col-md-6">
 							<p class="copyright text-left">
-								©hogasinenredos 2018
+								©hogarsinenredos 2018
 							</p>
 					</div>
 					<div class="col-md-6 text-right">
